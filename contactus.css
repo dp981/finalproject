@@ -1,0 +1,38 @@
+#form {
+    border: 2px solid;
+    padding: 86px;
+    margin-top: 25px;
+    padding: 5px;
+    margin-left:auto;
+    margin-right: auto;
+    width: 500px;
+    text-align: center;
+    font-size: x-large;
+}
+
+table,th,tr,td {
+    border: 2px solid;
+    text-align: center;
+    /* margin-left: 590px; */
+    font-size: 27px;
+    height: 47px;
+    padding:7px;
+    background-color: #f2e9e4;
+}
+.center {
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+    padding:0px;
+}
+.bgcolor {
+    background-color: #f2e9e4;
+}
+#clear:hover{
+    background-color: rgb(20, 141, 157);
+
+}
+#send:hover{
+    background-color: rgb(58, 102, 224);
+
+}

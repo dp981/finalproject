@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+.navbar {
+    background-color:#f5f5f5;
+    padding: 2px;
+    border: 2px solid;
+    
+}
+
+.navbar ul {
+    overflow: auto;
+    margin-left: -94px;
+}
+#logo{
+    margin: 0px;
+    width: 80px;
+    height: 40px;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    font-size: 27px;
+    margin-left: 73px;
+    font-family: Franklin Gothic Medium;
+}
+
+.navbar li a {
+    
+    text-decoration: none;
+    padding: 3p;
+    float: left;
+    list-style: none;
+    font-weight: bold;
+}
+.navbar li a:hover {
+background-color:#ebe1e1;
+color: #903564;
+/* border-radius:5px; */
+}    
+
+.navbar li a:active {
+    color:#ebe1e1;
+    background-color: #903564;
+    }    
+#headerbutton{
+    border-radius: 49px;
+    height: 42px;
+    width: 42px;
+    font-size: 10px;
+    margin-left: 835px;
+}
+#headerdiv{
+    margin-top: 5px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 14px;
+    color:#903564;
+    
+}
+
+button{
+    text-decoration: none;
+    background-color: #903564;
+    color: #ffffff;
+    font-size: 25px;
+    width: 128px;
+    height: 35px;
+}
+
+button:hover{
+    
+    background-color:#903564;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 2px;
+    margin-left: 2;
+    height: 34px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+h5 {
+    margin-top: -3px;
+    padding: 12px;
+    padding-left: -4px;
+    margin-left: 80px;
+    color:#903564;
+}
+
+a {
+    text-decoration: none;
+    color:#903564;
+}
+

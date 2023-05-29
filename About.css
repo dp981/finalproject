@@ -1,0 +1,24 @@
+
+img {
+    width: 400px;
+    margin-left: 542px; 
+}
+#img2{
+    border-radius: 361px;
+}
+.data {
+    border: 2px solid;
+    font-size: 20px;
+    width: 1013px;
+    margin: auto;
+    height: 268px;
+    margin-top: 26px;
+}
+#btn1 {
+    margin-left: 238px;
+    margin-top: 10px; 
+}
+#btn2 {
+    margin-left: 762px;
+    margin-top: 16px;
+}

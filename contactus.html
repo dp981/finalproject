@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="all.css">
+    <script src="all.js"></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav class="navbar" id="demo">
+                <ul>
+                    <li><a href="About.html"><img src="logo.webp" id="logo" alt="logo"></a></li>
+                    <li><a id="txt1" href="About.html">About</a></li>
+                    <li><a id="txt2" href="Gallery.html">Gallery</a></li>
+                    <li><a id="txt3" href="Moreinfo.html">Info</a></li>
+                    <li><button onclick="myFunction()" id="headerbutton">ok</button></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+    <form id="form">
+        <h2 id="h2">Contact</h2>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name" class="bgcolor">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="myEmail" id="email" class="bgcolor">
+        </div>
+        <br>
+        <label for="address">Message:</label>
+        <textarea type="Text" cols="30" rows="10" id="address" style="padding:40px;" class="bgcolor"></textarea>
+
+        <div>
+            <label for="male">Gender:Male</label>
+            <input type="radio" name="myGender" value="male" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="myGender" value="female" id="female">
+            <label for="other">Other</label>
+            <input type="radio" name="myGender" value="other" id="other">
+        </div>
+        <br>
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" class="bgcolor">
+                <option value="In">India</option>
+                <option value="Pk">Pakishtan</option>
+                <option value="Us">America</option>
+                <option value="br">Brazil</option>
+                <option value="ja">Japan</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div>
+            <button type="button" onclick="onReset()" class="btn" id="clear">clear</button>
+            <button type="button" onclick="onSubmit()" class="btn" id="send">send
+            </button>
+        </div>
+    </form>
+
+    <table class="center" id="myTable">
+        <tr>
+            <th>name</th>
+            <th>email</th>
+            <th>message</th>
+            <th>gender</th>
+            <th>contry</th>
+        </tr>
+    </table>
+
+   
+    
+    <script>
+        function onSubmit() {
+            let response1 = confirm("You have submitted your form successfully")
+            if (response1) {
+                const data = {}
+                data.name = document.getElementById("name").value
+                data.email = document.getElementById("email").value
+                data.address = document.getElementById("address").value
+                // let Gender = document.querySelector('input[name="myGender"]:checked').value
+                let gender = document.getElementsByName('myGender')
+                console.log(gender);
+                for (let i = 0; i < gender.length; i++) {
+                    if (gender[i].checked == true) {
+                        data.Gender = gender[i].value
+                    }
+                }
+                data.country = document.getElementById("country").value
+                console.log(data)
+                var tb = document.getElementById('myTable');
+                var row = tb.insertRow();
+                var cellName = row.insertCell();
+                var cellEmail = row.insertCell();
+                var cellmessage = row.insertCell();
+                var cellGender = row.insertCell();
+                var cellCountry = row.insertCell();
+                cellName.innerHTML = data.name;
+                cellEmail.innerHTML = data.email;
+                cellmessage.innerHTML = data.address;
+                cellGender.innerHTML = data.Gender;
+                cellCountry.innerHTML = data.country;
+            }
+        }
+        function onReset() {
+            let response = confirm("Are you sure you want to reset")
+            console.log(response)
+            if (response) {
+                //reset form
+                document.getElementById("form").reset()
+            }
+        }
+    </script>
+</body>
+</html>
